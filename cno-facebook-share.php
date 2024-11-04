@@ -28,10 +28,3 @@ $plugin_loader = new Plugin_Loader();
 
 register_activation_hook( __FILE__, array( $plugin_loader, 'activate' ) );
 register_deactivation_hook( __FILE__, array( $plugin_loader, 'deactivate' ) );
-?>
-
-<a href=<?php echo "https://www.facebook.com/dialog/share?app_id={$facebook_app_id}&display=popup&href={$shareable_url}&redirect_uri={$redirect_url}"; ?> title=" Share on Facebook"
-   target="_blank" class="share-locations__location--facebook btn__outline--secondary">
-	<i class="fa-brands fa-facebook"></i> Share on
-	Facebook
-</a>

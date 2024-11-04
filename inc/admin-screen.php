@@ -8,18 +8,18 @@
  */
 
 // show error/update messages
-settings_errors( 'cno_ig_feed' );
+settings_errors( 'cno_facebook_share' );
 
 ?>
-<div class="wrap" id="cno-facebook-share">
+<div class="wrap">
 	<h1>
 		<?php echo esc_html( get_admin_page_title() ); ?>
 	</h1>
-	<form method="POST" action="admin-post.php" novalidate="novalidate" autocomplete="off" id="cno-ig-feed">
+	<form method="POST" action="admin-post.php" novalidate="novalidate" autocomplete="off" id="cno-facebook-share">
 		<?php
-		wp_nonce_field( 'cno_ig_feed_options_verify', 'cno_ig_feed_options_nonce' );
-		settings_fields( 'cno_ig_feed_options_group' );
-		do_settings_sections( 'cno-ig-feed' );
+		wp_nonce_field( 'cno_facebook_share_options_verify', 'cno_facebook_share_options_nonce' );
+		settings_fields( 'cno_facebook_share_options_group' );
+		do_settings_sections( 'cno-facebook-share' );
 		submit_button();
 		?>
 	</form>

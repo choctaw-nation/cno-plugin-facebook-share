@@ -4,7 +4,7 @@
  *
  * @since 1.0
  * @package ChoctawNation
- * @subpackage
+ * @subpackage FacebookShare
  */
 
 namespace ChoctawNation\FacebookShare;
@@ -15,7 +15,30 @@ class Plugin_Loader {
 	 * Constructor
 	 */
 	public function __construct() {
+		$this->load_required_files();
 	}
+
+	/**
+	 * Loads the required files
+	 *
+	 * @return void
+	 */
+	private function load_required_files(): void {
+		$base_path = plugin_dir_path( __DIR__ );
+		$files     = array(
+			'class-view',
+			'class-model',
+			'class-controller',
+			'class-cno-facebook-link-generator',
+		);
+		foreach ( $files as $file ) {
+			require_once $base_path . "inc/{$file}.php";
+		}
+
+		new Controller();
+	}
+
+
 
 	/**
 	 * Initializes the Plugin
