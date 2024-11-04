@@ -7,8 +7,10 @@
  * @subpackage
  */
 
+namespace ChoctawNation\FacebookShare;
+
 /** Inits the Plugin */
-final class Plugin_Loader {
+class Plugin_Loader {
 	/**
 	 * Constructor
 	 */

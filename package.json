@@ -1,20 +1,17 @@
 {
-	"name": "choctaw-plugin-template",
+	"name": "cno-facebook-share",
 	"version": "1.0.0",
-	"description": "Choctaw Plugin template",
+	"description": "Choctaw Facebook Share plugin",
 	"prettier": "@wordpress/prettier-config",
 	"browserslist": [
 		"extends @wordpress/browserslist-config"
 	],
 	"author": "Choctaw Nation of Oklahoma",
 	"files": [
-		"dist",
 		"inc",
-		"template-parts",
-		"templates",
 		"readme.md",
 		"LICENSE",
-		"index.php"
+		"cno-facebook-share.php"
 	],
 	"scripts": {
 		"build": "wp-scripts build",
@@ -23,8 +20,10 @@
 		"start": "wp-scripts start"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^27.9.0",
-		"eslint-config-react-app": "^7.0.1",
-		"wp-types": "^3.65.0"
+		"@wordpress/scripts": "^30.4.0"
+	},
+	"overrides":{
+		"cookie":"^1.0.0",
+		"puppeteer-core":"^23.4.0"
 	}
 }
