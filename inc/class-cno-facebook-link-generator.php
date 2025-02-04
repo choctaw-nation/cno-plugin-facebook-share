@@ -82,12 +82,8 @@ class CNO_Facebook_Link_Generator {
 	 * @return string
 	 */
 	public function get_the_link( ?array $args = array() ): string {
-		if ( empty( $args['text'] ) ) {
-			if ( is_null( $args['text'] ) ) {
-				$text = null;
-			} elseif ( ! empty( $args['text'] ) ) {
-				$text = esc_textarea( $args['text'] );
-			}
+		if ( ! empty( $args['text'] ) ) {
+			$text = is_null( $args['text'] ) ? null : esc_textarea( $args['text'] );
 		} else {
 			$text = 'Share on Facebook';
 		}
