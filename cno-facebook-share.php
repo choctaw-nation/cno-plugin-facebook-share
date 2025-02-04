@@ -3,7 +3,7 @@
  * Plugin Name: CNO Facebook Share
  * Plugin URI: https://github.com/choctaw-nation/facebook-share
  * Description: A simple app that allows devs to share a URL to Facebook
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Choctaw Nation of Oklahoma
  * Author URI: https://www.choctawnation.com
  * Text Domain: cno
