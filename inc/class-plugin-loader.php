@@ -26,7 +26,7 @@ class Plugin_Loader {
 	private function load_required_files(): void {
 		$base_path = plugin_dir_path( __DIR__ );
 		$files     = array(
-			'class-view',
+			'class-view-controller',
 			'class-model',
 			'class-controller',
 			'class-cno-facebook-link-generator',
